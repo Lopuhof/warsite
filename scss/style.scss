@@ -1,3 +1,7 @@
+@import "../scss/fontsawesome/scss/fontawesome.scss";
+@import "../scss/fontsawesome/scss/solid.scss";
+@import "../scss/fontsawesome/scss/brands.scss";
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -8,31 +12,28 @@ body{
     background-color: white;
     background-image: url(../image/fone/body-fone.jpg);
     background-size: cover;
+    background-attachment: fixed;
 
     z-index: 1;
 }
 
 body::after{
   content: "";
-  position: absolute;
-  background-color: black;
+  position: fixed;
+  background-color: white;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  opacity: 0.6;
+  opacity: 0.8;
   
   z-index: 2;
-}
-
-.container{
-    width: 1440px;
 }
 
 .fone{
     position: relative;
     width: 100%;
-    background-color: black;
+    background-color: #002060;
     padding: 0;
     margin: 0;
 
@@ -69,6 +70,156 @@ body::after{
                 width: 87px;
                 height: 75px;
             }
+        }
+    }
+}
+
+.container{
+    display: block;
+    margin: auto;
+    position: relative;
+    width: 1440px;
+
+    z-index: 4;
+    &-menu{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px;
+        &-item{
+            font-family: 'Century Gothic Regular';
+            font-size: 1.5em;
+            font-style: normal;
+            font-weight: normal;
+            text-align: center;
+            color: #002060;
+            margin-top: 25px;
+        }
+    }.separation{
+        width: 1200px;
+        height: 3px;
+        margin: 0 auto;
+        margin-top: 40px;
+        background-color: #FFC000;
+        border: #FFC000;
+    }.about_project{
+        font-family: 'Bebas Neue Bold';
+        font-size: 5em;
+        font-style: bold;
+        font-weight: normal;
+        text-align: center;
+        color: #C30000;
+        margin-top: 45px;
+    }.under-project{
+        width: 150px;
+        height: 3px;
+        margin: auto;
+        margin-top: 20px;
+        background-color: #FFC000;
+        border: #FFC000;
+        margin-bottom: 25px;
+    }.project-text{
+        margin: auto;
+        width: 1000px;
+        text-align: justify;
+        text-indent: 25px;
+        font-family: Reforma Grotesk Medium;
+        font-size: 2em;
+    }
+    &-icons{
+        width: 1440px;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        &-items{
+            width: 30%;
+            &-item{
+                display: block;
+                margin: 0 auto;
+                width: 200px;
+                height: 200px;
+                transition: transform .5s;
+                img{
+                    width: 200px;
+                    height: 200px;
+                }
+            }&-item:hover{
+                transition: transform .5s;
+                transform: scale(1.3);
+            }
+            &-description{
+                display: block;
+                margin: 0 auto;
+                margin-top: 20px;
+                width: 200px;
+                font-family: 'Century Gothic Regular';
+                text-align: center;
+                font-weight: bold;
+                transition: transform 1s;
+            }&-description:hover{
+                transition: transform 1s;
+                transform: scale(1.3);
+            }
+            &-background{
+                background-color: #FFC000;
+                border-radius: 100%;
+                width: 220px;
+                height: 220px;
+                display: block;
+                margin: -268px auto;
+            }
+        }
+    }
+}
+
+.footer{
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: 285px;
+    padding: 40px;
+    width: 100%;
+    background-color: #002060;
+
+    z-index: 999;
+    &-elements{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        &-links{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            width: 30%;
+            &-link:not(:first-child){
+                display: flex;
+                justify-content: start;
+                flex-direction: row;
+                margin-top: 10px;
+                .for-a{
+                    display: block;
+                    color: white;
+                    font-family: 'Reforma Grotesk Medium';
+                    font-size: 25px;
+                }
+                i{
+                    color: white;
+                    font-size: 30px;
+                    width: 40px;
+                }
+            }
+            &-link{
+                display: flex;
+                justify-content: start;
+                flex-direction: row;
+                color: white;
+                font-size: 30px;
+            }
+        }
+        &-navigation{
+            width: 30%;
+        }
+        &-thanks{
+            width: 30%;
         }
     }
 }
