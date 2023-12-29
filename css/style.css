@@ -10513,7 +10513,6 @@ body::after {
 .footer {
   position: relative;
   display: block;
-  margin: auto;
   margin-top: 285px;
   padding: 40px;
   width: 100%;
@@ -10523,13 +10522,13 @@ body::after {
 .footer-elements {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .footer-elements-links {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  width: 30%;
+  width: 20%;
 }
 .footer-elements-links-link:not(:first-child) {
   display: flex;
@@ -10541,7 +10540,9 @@ body::after {
   display: block;
   color: white;
   font-family: 'Reforma Grotesk Medium';
-  font-size: 25px;
+  font-size: 35px;
+  margin-left: 8px;
+  margin-top: -4px;
 }
 .footer-elements-links-link:not(:first-child) i {
   color: white;
@@ -10555,9 +10556,39 @@ body::after {
   color: white;
   font-size: 30px;
 }
+.footer-elements-links-link .for-a {
+  display: block;
+  color: white;
+  font-family: 'Reforma Grotesk Medium';
+  font-size: 35px;
+  margin-left: 19px;
+  margin-top: -4px;
+}
+.footer-elements-links-link .for-a a {
+  text-decoration: none;
+  color: white;
+}
 .footer-elements-navigation {
-  width: 30%;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+.footer-elements-navigation-nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 90%;
+  margin-top: 7%;
+  color: white;
+  font-family: 'Reforma Grotesk Medium';
+  font-size: 40px;
 }
 .footer-elements-thanks {
-  width: 30%;
+  width: 15%;
+}
+.footer-elements-thanks-thank {
+  text-align: center;
+  color: white;
+  font-family: 'Reforma Grotesk Medium';
+  font-size: 30px;
 }

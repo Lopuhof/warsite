@@ -174,7 +174,6 @@ body::after{
 .footer{
     position: relative;
     display: block;
-    margin: auto;
     margin-top: 285px;
     padding: 40px;
     width: 100%;
@@ -184,12 +183,12 @@ body::after{
     &-elements{
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         &-links{
             display: flex;
             justify-content: space-between;
             flex-direction: column;
-            width: 30%;
+            width: 20%;
             &-link:not(:first-child){
                 display: flex;
                 justify-content: start;
@@ -199,7 +198,9 @@ body::after{
                     display: block;
                     color: white;
                     font-family: 'Reforma Grotesk Medium';
-                    font-size: 25px;
+                    font-size: 35px;
+                    margin-left: 8px;
+                    margin-top: -4px;
                 }
                 i{
                     color: white;
@@ -213,13 +214,44 @@ body::after{
                 flex-direction: row;
                 color: white;
                 font-size: 30px;
+                .for-a{
+                    display: block;
+                    color: white;
+                    font-family: 'Reforma Grotesk Medium';
+                    font-size: 35px;
+                    margin-left: 19px;
+                    margin-top: -4px;
+                    a{
+                        text-decoration: none;
+                        color: white;
+
+                    }
+                }
             }
         }
         &-navigation{
-            width: 30%;
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            &-nav{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                width: 90%;
+                margin-top: 7%;
+                color: white;
+                font-family: 'Reforma Grotesk Medium';
+                font-size: 40px;
+            }
         }
         &-thanks{
-            width: 30%;
+            width: 15%;
+            &-thank{
+                text-align: center;
+                color: white;
+                font-family: 'Reforma Grotesk Medium';
+                font-size: 30px;
+            }
         }
     }
 }
