@@ -87,14 +87,21 @@ body::after{
         margin-top: 15px;
         &-item{
             font-family: 'Century Gothic Regular';
-            font-size: 1.5em;
-            font-style: normal;
-            font-weight: normal;
-            text-align: center;
-            color: #002060;
             margin-top: 25px;
+            .menu-link{
+                display: inline-block;
+                text-decoration: none;
+                color: #002060;
+                font-size: 1.5em;
+                transition: .5s;
+            }.menu-link:hover{
+                transform: scale(1.2);
+            }.active{
+                border-bottom: red;
+            }
         }
-    }.separation{
+    }  
+    .separation{
         width: 1200px;
         height: 3px;
         margin: 0 auto;
@@ -112,11 +119,12 @@ body::after{
     }.under-project{
         width: 150px;
         height: 3px;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 20px;
+        margin-bottom: 25px;
         background-color: #FFC000;
         border: #FFC000;
-        margin-bottom: 25px;
     }.project-text{
         margin: auto;
         width: 1000px;
@@ -127,6 +135,7 @@ body::after{
     }
     &-icons{
         width: 1440px;
+        height: 280px;
         display: flex;
         justify-content: center;
         margin-top: 50px;
@@ -169,12 +178,15 @@ body::after{
             }
         }
     }
+    &-after_text{
+        width: 400px;
+        color: red;
+    }
 }
 
 .footer{
     position: relative;
     display: block;
-    margin-top: 285px;
     padding: 40px;
     width: 100%;
     background-color: #002060;
@@ -224,7 +236,6 @@ body::after{
                     a{
                         text-decoration: none;
                         color: white;
-
                     }
                 }
             }
@@ -255,7 +266,3 @@ body::after{
         }
     }
 }
-    
-
-
-
