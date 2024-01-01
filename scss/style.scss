@@ -65,10 +65,18 @@ body::after{
                 margin-top: 25px;
                 width: 70px;
                 height: 52px;
+                transition: .5s;
+            }
+            .kembibl:hover{
+                transform: scale(1.7);
             }
             .info{
                 width: 87px;
                 height: 75px;
+                transition: .5s;
+            }
+            .info:hover{
+                transform: scale(1.7);
             }
         }
     }
@@ -96,8 +104,12 @@ body::after{
                 transition: .5s;
             }.menu-link:hover{
                 transform: scale(1.2);
+                color: #FFC000;
             }.active{
-                border-bottom: red;
+                text-decoration: underline;
+                text-decoration-color: white;
+                text-underline-offset: 20px;
+                text-decoration-thickness: 4px;
             }
         }
     }  
