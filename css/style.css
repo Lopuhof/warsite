@@ -10377,6 +10377,7 @@ body::after {
   margin: 0 auto;
   width: 1440px;
   padding: 15px;
+  padding-top: 5px;
   display: flex;
   justify-content: space-between;
 }
@@ -10408,7 +10409,7 @@ body::after {
 .fone-container .mini-description .fa-star {
   font-size: 1.5em;
   color: #C30000;
-  -webkit-text-stroke: 2px white;
+  -webkit-text-stroke: 1px white;
   margin-top: 7px;
 }
 .fone-container .mini-description .under-main {
@@ -10416,10 +10417,11 @@ body::after {
   font-size: 0.7em;
   color: #FFC000;
   margin-top: 5px;
+  text-align: center;
 }
 .fone-container-logo {
+  padding-top: 5px;
   width: 193px;
-  height: 95px;
   display: flex;
   justify-content: center;
 }

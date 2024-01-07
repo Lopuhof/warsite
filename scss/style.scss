@@ -42,6 +42,7 @@ body::after{
         margin: 0 auto;
         width: 1440px;
         padding: 15px;
+        padding-top: 5px;
         display: flex;
         justify-content: space-between;
         .main-header{
@@ -71,7 +72,7 @@ body::after{
             .fa-star{
                 font-size: 1.5em;
                 color: #C30000;
-                -webkit-text-stroke: 2px white;
+                -webkit-text-stroke: 1px white;
                 margin-top: 7px;
             }
             .under-main{
@@ -79,11 +80,12 @@ body::after{
                 font-size: 0.7em;
                 color:#FFC000;
                 margin-top: 5px;
+                text-align: center;
             }
         }
         &-logo{
+            padding-top: 5px;
             width: 193px;
-            height: 95px;
             display: flex;
             justify-content: center;
             .mini-description{
@@ -139,7 +141,7 @@ body::after{
                 transition: .5s;
             }.menu-link:hover{
                 transform: scale(1.2);
-                color: #FFC000;
+                color: #FFC000; 
             }.active{
                 text-decoration: underline;
                 text-decoration-color: white;
