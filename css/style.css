@@ -10389,11 +10389,46 @@ body::after {
   color: white;
   margin-top: 10px;
 }
+.fone-container .mini-description {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  height: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -5px;
+}
+.fone-container .mini-description .logo-line {
+  display: inline;
+  width: 25px;
+  height: 8px;
+  background-color: #FFC000;
+  margin-top: 17px;
+}
+.fone-container .mini-description .fa-star {
+  font-size: 1.5em;
+  color: #C30000;
+  -webkit-text-stroke: 2px white;
+  margin-top: 7px;
+}
+.fone-container .mini-description .under-main {
+  font-family: 'Century Gothic Regular';
+  font-size: 0.7em;
+  color: #FFC000;
+  margin-top: 5px;
+}
 .fone-container-logo {
   width: 193px;
   height: 95px;
   display: flex;
   justify-content: center;
+}
+.fone-container-logo .mini-description {
+  display: flex;
+  justify-content: space-between;
+}
+.fone-container-logo .mini-description .logo-line {
+  width: 14px;
 }
 .fone-container-logo .img-fone-logo {
   margin: 17px;

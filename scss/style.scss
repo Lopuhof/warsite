@@ -53,11 +53,46 @@ body::after{
             color: white;
             margin-top: 10px;
         }
+        .mini-description{
+            display:flex;
+            justify-content: space-between;
+            width: 250px;
+            height: 35px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -5px;
+            .logo-line{
+                display: inline;
+                width: 25px;
+                height: 8px;
+                background-color: #FFC000;
+                margin-top: 17px;
+            }
+            .fa-star{
+                font-size: 1.5em;
+                color: #C30000;
+                -webkit-text-stroke: 2px white;
+                margin-top: 7px;
+            }
+            .under-main{
+                font-family: 'Century Gothic Regular';
+                font-size: 0.7em;
+                color:#FFC000;
+                margin-top: 5px;
+            }
+        }
         &-logo{
             width: 193px;
             height: 95px;
             display: flex;
             justify-content: center;
+            .mini-description{
+                display: flex;
+                justify-content: space-between;
+                .logo-line{
+                    width: 14px;
+                }
+            }
             .img-fone-logo{
                 margin: 17px;
             }
