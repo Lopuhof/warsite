@@ -10572,10 +10572,6 @@ body::after {
   display: block;
   margin: -268px auto;
 }
-.container-after_text {
-  width: 400px;
-  color: red;
-}
 
 .footer {
   position: relative;
