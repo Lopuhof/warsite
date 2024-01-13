@@ -10660,78 +10660,59 @@ body::after {
 }
 
 .left-links {
+  display: block;
   position: fixed;
   top: 45%;
   left: 0;
   bottom: 0;
   right: 0;
   width: 350px;
-  height: 200px;
-  background-color: red;
+  height: 350px;
   padding-left: 20px;
   padding-top: 10px;
+  padding-right: 25px;
   z-index: 5;
 }
-.left-links-mibssite {
-  display: flex;
-  justify-content: flex-end;
-  width: 80%;
-  height: 30px;
-}
-.left-links-mibssite-text {
-  font-family: 'Reforma Grotesk Medium';
-  font-size: 2em;
-}
-.left-links-mibssite-text a {
+.left-links a {
   text-decoration: none;
   color: #002060;
+  transition: .5s;
 }
-.left-links-mibssite-icon {
+.left-links a:hover {
+  color: #FFC000;
+}
+.left-links-element:first-child {
+  margin-top: 10px;
+}
+.left-links-element:nth-child(n + 2) {
+  margin-top: 15px;
+}
+.left-links-element {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #002060;
+  background-color: white;
+  border-radius: 10px;
+}
+.left-links-element-text {
+  font-family: 'Reforma Grotesk Medium';
+  font-size: 2em;
+  text-align: right;
+}
+.left-links-element-icon {
   font-size: 2em;
   margin-left: 10px;
 }
-.left-links-mibssite-icon i {
-  color: white;
-}
-.left-links-mibsvk {
-  display: flex;
-  justify-content: flex-end;
-  width: 80%;
-  height: 30px;
-}
-.left-links-mibsvk-text {
-  font-family: 'Reforma Grotesk Medium';
-  font-size: 2em;
-}
-.left-links-mibsvk-text a {
-  text-decoration: none;
+.left-links-element-icon i {
+  margin: auto;
+  font-size: 2.2em;
   color: #002060;
 }
-.left-links-mibsvk-icon {
-  font-size: 2em;
-  margin-left: 10px;
-}
-.left-links-mibsvk-icon i {
-  color: white;
-}
-.left-links-infovk {
-  display: flex;
-  justify-content: flex-end;
-  width: 80%;
-  height: 30px;
-}
-.left-links-infovk-text {
-  font-family: 'Reforma Grotesk Medium';
-  font-size: 2em;
-}
-.left-links-infovk-text a {
-  text-decoration: none;
-  color: #002060;
-}
-.left-links-infovk-icon {
-  font-size: 2em;
-  margin-left: 10px;
-}
-.left-links-infovk-icon i {
-  color: white;
+.left-links-element-icon i:hover {
+  color: #FFC000;
+  transition: .5s;
 }
