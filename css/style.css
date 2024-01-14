@@ -10494,7 +10494,7 @@ body::after {
   background-color: #FFC000;
   border: #FFC000;
 }
-.container .about_project {
+.container .about-project {
   font-family: 'Bebas Neue Bold';
   font-size: 5em;
   font-style: bold;
@@ -10653,6 +10653,14 @@ body::after {
   color: white;
   font-family: 'Reforma Grotesk Medium';
   font-size: 30px;
+}
+.footer-cards {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+.footer-cards-element {
+  width: 30%;
 }
 
 .left-links {

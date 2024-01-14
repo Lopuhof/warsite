@@ -157,7 +157,8 @@ body::after{
         margin-top: 40px;
         background-color: #FFC000;
         border: #FFC000;
-    }.about_project{
+    }
+    .about-project{
         font-family: 'Bebas Neue Bold';
         font-size: 5em;
         font-style: bold;
@@ -165,7 +166,8 @@ body::after{
         text-align: center;
         color: #C30000;
         margin-top: 45px;
-    }.under-project{
+    }
+    .under-project{
         width: 150px;
         height: 3px;
         margin-left: auto;
@@ -174,7 +176,8 @@ body::after{
         margin-bottom: 25px;
         background-color: #FFC000;
         border: #FFC000;
-    }.project-text{
+    }
+    .project-text{
         margin: auto;
         width: 1000px;
         text-align: justify;
@@ -312,6 +315,14 @@ body::after{
                 font-family: 'Reforma Grotesk Medium';
                 font-size: 30px;
             }
+        }
+    }
+    &-cards{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        &-element{
+            width: 30%;
         }
     }
 }
