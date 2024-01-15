@@ -2,11 +2,15 @@
 @import "../scss/fontsawesome/scss/solid.scss";
 @import "../scss/fontsawesome/scss/brands.scss";
 
+$font-text: 'Reforma Grotesk Medium';
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0; 
 }
+
+
 
 body{
     background-color: white;
@@ -182,7 +186,7 @@ body::after{
         width: 1000px;
         text-align: justify;
         text-indent: 25px;
-        font-family: Reforma Grotesk Medium;
+        font-family: $font-text;
         font-size: 2em;
     }
     &-icons{
@@ -234,6 +238,40 @@ body::after{
             }
         }
     }
+    &-cards{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 115%;
+        &-element{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            width: 30%;
+            &-img{
+                img{
+                    width: 225px;
+                    height: 300px;
+                }
+            }
+            &-text{
+                position: absolute;
+                display: block;
+                width: 200px;
+                margin-left: 320px;
+                font-family: $font-text;
+                text-align: left;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .scale{
+                width: 100px;
+                height: 30px;
+                margin-top: 250px;
+                margin-left: 40px;
+            }
+        }
+    }
 }
 
 .footer{
@@ -261,7 +299,7 @@ body::after{
                 .for-a{
                     display: block;
                     color: white;
-                    font-family: 'Reforma Grotesk Medium';
+                    font-family: $font-text;
                     font-size: 35px;
                     margin-left: 8px;
                     margin-top: -4px;
@@ -281,7 +319,7 @@ body::after{
                 .for-a{
                     display: block;
                     color: white;
-                    font-family: 'Reforma Grotesk Medium';
+                    font-family: $font-text;
                     font-size: 35px;
                     margin-left: 19px;
                     margin-top: -4px;
@@ -303,7 +341,7 @@ body::after{
                 width: 90%;
                 margin-top: 7%;
                 color: white;
-                font-family: 'Reforma Grotesk Medium';
+                font-family: $font-text;
                 font-size: 40px;
             }
         }
@@ -312,17 +350,9 @@ body::after{
             &-thank{
                 text-align: center;
                 color: white;
-                font-family: 'Reforma Grotesk Medium';
+                font-family: $font-text;
                 font-size: 30px;
             }
-        }
-    }
-    &-cards{
-        display: flex;
-        justify-content: center;
-        width: 90%;
-        &-element{
-            width: 30%;
         }
     }
 }
@@ -366,7 +396,7 @@ body::after{
         background-color: white;
         border-radius: 10px;
         &-text{
-            font-family: 'Reforma Grotesk Medium';
+            font-family: $font-text;
             font-size: 2em;
             text-align: right;
         }

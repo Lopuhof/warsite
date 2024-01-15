@@ -10518,7 +10518,7 @@ body::after {
   width: 1000px;
   text-align: justify;
   text-indent: 25px;
-  font-family: Reforma Grotesk Medium;
+  font-family: "Reforma Grotesk Medium";
   font-size: 2em;
 }
 .container-icons {
@@ -10572,6 +10572,38 @@ body::after {
   display: block;
   margin: -268px auto;
 }
+.container-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 115%;
+}
+.container-cards-element {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+.container-cards-element-img img {
+  width: 225px;
+  height: 300px;
+}
+.container-cards-element-text {
+  position: absolute;
+  display: block;
+  width: 200px;
+  margin-left: 320px;
+  font-family: "Reforma Grotesk Medium";
+  text-align: left;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.container-cards-element .scale {
+  width: 100px;
+  height: 30px;
+  margin-top: 250px;
+  margin-left: 40px;
+}
 
 .footer {
   position: relative;
@@ -10601,7 +10633,7 @@ body::after {
 .footer-elements-links-link:not(:first-child) .for-a {
   display: block;
   color: white;
-  font-family: 'Reforma Grotesk Medium';
+  font-family: "Reforma Grotesk Medium";
   font-size: 35px;
   margin-left: 8px;
   margin-top: -4px;
@@ -10621,7 +10653,7 @@ body::after {
 .footer-elements-links-link .for-a {
   display: block;
   color: white;
-  font-family: 'Reforma Grotesk Medium';
+  font-family: "Reforma Grotesk Medium";
   font-size: 35px;
   margin-left: 19px;
   margin-top: -4px;
@@ -10642,7 +10674,7 @@ body::after {
   width: 90%;
   margin-top: 7%;
   color: white;
-  font-family: 'Reforma Grotesk Medium';
+  font-family: "Reforma Grotesk Medium";
   font-size: 40px;
 }
 .footer-elements-thanks {
@@ -10651,16 +10683,8 @@ body::after {
 .footer-elements-thanks-thank {
   text-align: center;
   color: white;
-  font-family: 'Reforma Grotesk Medium';
+  font-family: "Reforma Grotesk Medium";
   font-size: 30px;
-}
-.footer-cards {
-  display: flex;
-  justify-content: center;
-  width: 90%;
-}
-.footer-cards-element {
-  width: 30%;
 }
 
 .left-links {
@@ -10703,7 +10727,7 @@ body::after {
   border-radius: 10px;
 }
 .left-links-element-text {
-  font-family: 'Reforma Grotesk Medium';
+  font-family: "Reforma Grotesk Medium";
   font-size: 2em;
   text-align: right;
 }
