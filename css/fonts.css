@@ -1,0 +1,31 @@
+@import "../scss/fontsawesome/scss/fontawesome.css";
+@import "../scss/fontsawesome/scss/solid.css";
+@import "../scss/fontsawesome/scss/brands.css";
+
+@font-face {
+    font-family: 'Imperial One Regular';
+    src: url('../css/fonts/ImperialOne.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century Gothic Regular';
+    src: url('../css/fonts/CenturyGothic.ttf');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Bebas Neue Bold';
+    src: url('../css/fonts/BebasNeueBold.ttf');
+    font-weight: 400;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Reforma Grotesk Medium';
+    src: url('../css/fonts/ReformaGroteskMediumC.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
