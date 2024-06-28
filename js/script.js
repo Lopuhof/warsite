@@ -9,7 +9,6 @@ search: {
 let leftLinks = document.querySelector('.left-links');
 let closeBtn = document.querySelector('.close-links');
 
-
 function generateCards(data) {
 
     const cards = [];
@@ -66,3 +65,6 @@ function close(item) {
 };
 
 close(leftLinks);
+
+//Увеличиваем обложки книг
+let bigPicture = document.querySelector('.scale');

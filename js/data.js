@@ -66,10 +66,10 @@ const cardsData = [
       description: '', 
    },
    {
-   id: 12, 
-   title: 'Капитанская дочка', 
-   author: 'Александр Сергеевич Пушкин',
-   description: '', 
+      id: 12, 
+      title: 'Капитанская дочка', 
+      author: 'Александр Сергеевич Пушкин',
+      description: '', 
    },
    {
       id: 13, 
@@ -102,10 +102,10 @@ const cardsData = [
       description: '', 
    },
    {
-   id: 18, 
-   title: 'Капитанская дочка', 
-   author: 'Александр Сергеевич Пушкин',
-   description: '', 
+      id: 18, 
+      title: 'Капитанская дочка', 
+      author: 'Александр Сергеевич Пушкин',
+      description: '', 
    },
    {
       id: 19, 
@@ -138,10 +138,10 @@ const cardsData = [
       description: '', 
    },
    {
-   id: 24, 
-   title: 'Капитанская дочка', 
-   author: 'Александр Сергеевич Пушкин',
-   description: '', 
+      id: 24, 
+      title: 'Капитанская дочка', 
+      author: 'Александр Сергеевич Пушкин',
+      description: '', 
    },
    {
       id: 25, 
@@ -174,10 +174,10 @@ const cardsData = [
       description: '', 
    },
    {
-   id: 30, 
-   title: 'Капитанская дочка', 
-   author: 'Александр Сергеевич Пушкин',
-   description: '', 
+      id: 30, 
+      title: 'Капитанская дочка', 
+      author: 'Александр Сергеевич Пушкин',
+      description: '', 
    },
    {
       id: 31, 
@@ -198,9 +198,9 @@ const cardsData = [
       description: '', 
    },
    {
-   id: 34, 
-   title: '', 
-   author: 'Тютчев',
-   description: '', 
+      id: 34, 
+      title: '', 
+      author: 'Тютчев',
+      description: '', 
    },
 ];
