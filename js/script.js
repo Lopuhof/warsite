@@ -6,9 +6,6 @@ search: {
     },    
 };
 
-let leftLinks = document.querySelector('.left-links');
-let closeBtn = document.querySelector('.close-links');
-
 function generateCards(data) {
 
     const cards = [];
@@ -58,6 +55,9 @@ domElements.containerCards.innerHTML = cardsArr.join('');
     };
 };
 
+let leftLinks = document.querySelector('.left-links');
+let closeBtn = document.querySelector('.close-links');
+
 function close(item) {
     closeBtn.onclick = function() {
         item.style.display = 'none';
@@ -69,11 +69,15 @@ close(leftLinks);
 //Увеличиваем обложки книг
 let bigPicture = document.querySelector('.scale');
 let modal = document.querySelector('.modal');
+let closeModal = document.querySelector('.modal-content-close');
 
-function scale(element) {
+function scaleAndClose(element) {
     bigPicture.onclick = function() {
         element.style.display = 'block';
     };
+    closeModal.onclick = function() {
+        element.style.display = 'none';
+    };
 };
 
-scale(modal);
+scaleAndClose(modal);
