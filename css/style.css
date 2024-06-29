@@ -11473,24 +11473,28 @@ body::after {
   z-index: 998;
 }
 .modal-content-image {
-  width: 500px;
-  height: 700px;
+  display: block;
   border: 3px;
   border-color: #002060;
   border-radius: 3px;
 }
-.modal-content .fa-circle-xmark {
-  color: white;
-  font-size: 3em;
-  cursor: pointer;
-}
-.modal-content .fa-circle-xmark:hover {
-  color: #FFC000;
-  transition: 0.5s all;
+.modal-content-image img {
+  display: block;
+  width: 75%;
 }
 .modal-content-close {
   width: 10px;
   height: 10px;
+}
+.modal-content-close .fa-circle-xmark {
+  display: block;
+  color: white;
+  font-size: 3em;
+  cursor: pointer;
+}
+.modal-content-close .fa-circle-xmark:hover {
+  color: #FFC000;
+  transition: 0.5s all;
 }
 
 .modal::after {

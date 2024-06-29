@@ -68,3 +68,12 @@ close(leftLinks);
 
 //Увеличиваем обложки книг
 let bigPicture = document.querySelector('.scale');
+let modal = document.querySelector('.modal');
+
+function scale(element) {
+    bigPicture.onclick = function() {
+        element.style.display = 'block';
+    };
+};
+
+scale(modal);
