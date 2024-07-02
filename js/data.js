@@ -15,7 +15,7 @@ const cardsData = [
       id: 3, 
       title: 'Беглец', 
       author: 'Антон Павлович Чехов',
-      description: '', 
+      description: 'Димас', 
    },
    {
       id: 4, 
@@ -27,7 +27,7 @@ const cardsData = [
       id: 5, 
       title: 'Детство', 
       author: 'Максим Горький',
-      description: '', 
+      description: '',
    },
    {
       id: 6, 
