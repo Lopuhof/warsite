@@ -3,6 +3,10 @@ containerCards: document.getElementById('container-cardsId'),
 search: {
     input: document.getElementById('search_string'),
     button: document.getElementById('button-search'),
+    },
+modalWindow: {
+    modal: document.getElementById('modalWindow'),
+    btn: document.querySelector('.scale'),
     },    
 };
 
@@ -17,7 +21,7 @@ function generateCards(data) {
                 <h4 class="author">${data[i].author}</h4>
                 <h4 class="book-title">${data[i].title}<br>(1946)</h4>
                 <hr class="under-project under-project-book"><p>${data[i].description}</p><hr class="under-project"></div>
-                <button class="scale">Увеличить</button>
+                <button class="scale scale_${i + 1}">Увеличить</button>
             </div>
         `);
     };
@@ -67,16 +71,24 @@ function close(item) {
 close(leftLinks);
 
 //Увеличиваем обложки книг
-let bigPicture = document.querySelector('.scale');
+
 let modal = document.querySelector('.modal');
 let closeModal = document.querySelector('.modal-content-close');
 
 function scaleAndClose(element) {
-    bigPicture.onclick = function() {
-        element.style.display = 'block';
-    };
-    closeModal.onclick = function() {
-        element.style.display = 'none';
+        for (let i; i < cardsData.length; i = i + 1) {
+
+            let bigPicture = document.querySelector(`.scale_${i}`);
+            let imageModal = document.querySelector(`.big-image`);
+
+            bigPicture.onclick = function() {
+                element.style.display = 'block';
+                imageModal.style.src = `../image/books/${i}.jpg`;
+            };
+            closeModal.onclick = function() {
+                element.style.display = 'none';
+            };
+
     };
 };
 

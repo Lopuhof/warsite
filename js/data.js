@@ -9,7 +9,7 @@ const cardsData = [
       id: 2, 
       title: 'Хаджи-Мурат', 
       author: 'Лев Николаевич Толстой',
-      description: '', 
+      description: '',
    },
    {
       id: 3, 

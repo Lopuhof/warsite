@@ -10979,7 +10979,7 @@ body::after {
   margin-bottom: 3%;
 }
 .container-cards-element .scale {
-  width: 46%;
+  width: 52%;
   height: 30px;
   margin-top: 7px;
   font-family: 'Century Gothic Regular';
@@ -11478,7 +11478,7 @@ body::after {
   border-color: #002060;
   border-radius: 3px;
 }
-.modal-content-image img {
+.modal-content-image .big-image {
   display: block;
   width: 75%;
 }
