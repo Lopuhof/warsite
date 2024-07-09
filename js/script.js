@@ -17,8 +17,8 @@ function generateCards(data) {
                 <div class="container-cards-element-text">
                 <h4 class="author">${data[i].author}</h4>
                 <h4 class="book-title">${data[i].title}<br>(1946)</h4>
-                <hr class="under-project under-project-book"><p>${data[i].description}</p><hr class="under-project"></div>
-                <button class="scale scale_${i + 1}">Увеличить</button>
+                <hr class="under-project-book"><p>${data[i].description}</p></div>
+                <button class="scale" id="scale_${i + 1}">Увеличить</button>
             </div>
         `);
     };

@@ -10877,7 +10877,6 @@ body::after {
   display: block;
   /* width: 220px; */
   margin-left: 51%;
-  padding-top: 6%;
   padding-right: 2%;
   font-family: "Reforma Grotesk Medium";
   font-size: 1.5em;
@@ -10929,8 +10928,8 @@ body::after {
 .container-cards-element-text .author {
   text-align: center;
   font-family: "Century Gothic Regular";
-  font-size: 0.5vw;
-  color: #FFC000;
+  font-size: 0.7vw;
+  color: #C30000;
 }
 @media (min-width: 320px) and (max-width: 500px) {
   .container-cards-element-text .author {
@@ -10948,6 +10947,7 @@ body::after {
   }
 }
 .container-cards-element-text .book-title {
+  margin-top: 0.7vw;
   font-family: 'Bebas Neue Bold';
   font-size: 1em;
   color: #FFC000;
@@ -10973,9 +10973,15 @@ body::after {
     margin-top: 0;
   }
 }
-.container-cards-element-text .under-poject-book {
-  margin-top: 0;
-  margin-bottom: 0;
+.container-cards-element-text .under-project-book {
+  width: 90%;
+  height: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  background-color: #FFC000;
+  border: #FFC000;
 }
 .container-cards-element .scale {
   width: 52%;
@@ -10987,7 +10993,6 @@ body::after {
   background-color: white;
   border-radius: 5px;
   transition: 0.5s all;
-  display: none;
 }
 @media (min-width: 320px) and (max-width: 500px) {
   .container-cards-element .scale {
