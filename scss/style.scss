@@ -998,61 +998,65 @@ body::after{
     }
 }
 
-.modal{
-    position: fixed;
+.modalsWindows{
+    &-modal{
     display: none;
+    position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
 
-    z-index: 999;
-    &-content{
-        position: fixed;
-        display: flex;
-        justify-content: center;
-        top: 50%;
-        right: 0;
-        left: 0;
-        text-align: center;
-        transform: translateY(-50%);
+    z-index: 998;
+        &-content{
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            top: 50%;
+            right: 0;
+            left: 0;
+            text-align: center;
+            transform: translateY(-50%);
 
-        z-index: 998;
-        &-image{
-            display: block;
-            border: 3px;
-            border-color: #002060;
-            border-radius: 3px;
-            .big-image{
+            z-index: 999;
+            &-image{
                 display: block;
-                width: 75%;
+                border: 3px;
+                border-color: #002060;
+                border-radius: 3px;
+
+                z-index: 999;
+                .big-image{
+                    display: block;
+                    width: 75%;
+                }
             }
-        }
-        &-close{
-            width: 10px;
-            height: 10px;
-            .fa-circle-xmark{
-                display: block;
-                color: white;
-                font-size: 3em;
-                cursor: pointer;
-            }
-            .fa-circle-xmark:hover{
-                color: #FFC000;
-    
-                transition: 0.5s all;
+            &-close{
+                width: 10px;
+                height: 10px;
+                .fa-circle-xmark{
+                    display: block;
+                    color: white;
+                    font-size: 3em;
+                    cursor: pointer;
+                }
+                .fa-circle-xmark:hover{
+                    color: #FFC000;
+        
+                    transition: 0.5s all;
+                }
             }
         }
     }
-}
-.modal::after{
-    content: '';
-    position: absolute;
-    background-color: black;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    opacity: 0.9;
+    &-modal::after{
+        content: '';
+        position: absolute;
+        background-color: black;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        opacity: 0.9;
 
-    z-index: 997;
+        z-index: 997;
+    }
 }
