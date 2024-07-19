@@ -999,6 +999,11 @@ body::after{
 }
 
 .modalsWindows{
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     &-modal{
     display: none;
     position: fixed;
@@ -1027,7 +1032,7 @@ body::after{
                 z-index: 999;
                 .big-image{
                     display: block;
-                    width: 75%;
+/*                     width: 75%; */
                 }
             }
             &-close{
@@ -1048,7 +1053,7 @@ body::after{
         }
     }
     &-modal::after{
-        content: '';
+        content: "";
         position: absolute;
         background-color: black;
         top: 0;
@@ -1058,5 +1063,17 @@ body::after{
         opacity: 0.9;
 
         z-index: 997;
+        @media (min-width: 1441px){
+            content: "";
+            position: absolute;
+            background-color: black;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.9;
+
+            z-index: 997;
+        }
     }
-}
+};

@@ -11458,6 +11458,13 @@ body::after {
   transition: 0.5s all;
 }
 
+.modalsWindows {
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 .modalsWindows-modal {
   display: none;
   position: fixed;
@@ -11486,7 +11493,7 @@ body::after {
 }
 .modalsWindows-modal-content-image .big-image {
   display: block;
-  width: 75%;
+  /*                     width: 75%; */
 }
 .modalsWindows-modal-content-close {
   width: 10px;
@@ -11503,7 +11510,7 @@ body::after {
   transition: 0.5s all;
 }
 .modalsWindows-modal::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: black;
   top: 0;
@@ -11512,4 +11519,17 @@ body::after {
   bottom: 0;
   opacity: 0.9;
   z-index: 997;
+}
+@media (min-width: 1441px) {
+  .modalsWindows-modal::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.9;
+    z-index: 997;
+  }
 }
