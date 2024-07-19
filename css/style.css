@@ -10820,7 +10820,7 @@ body::after {
 }
 @media (min-width: 501px) and (max-width: 768px) {
   .container-cards-element {
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3%;
@@ -10836,6 +10836,9 @@ body::after {
   .container-cards-element {
     width: 32%;
   }
+}
+.container-cards-element-img {
+  width: 45%;
 }
 .container-cards-element-img img {
   width: 225px;
@@ -10909,14 +10912,12 @@ body::after {
     margin-left: 47%;
     width: 50%;
     font-size: 2.5vw;
-    padding-top: 6%;
   }
 }
 @media (min-width: 1001px) and (max-width: 1439px) {
   .container-cards-element-text {
     font-size: 1.5vw;
     margin-left: 47%;
-    padding-top: 4%;
     padding-right: 3%;
   }
 }
@@ -10934,6 +10935,7 @@ body::after {
 @media (min-width: 320px) and (max-width: 500px) {
   .container-cards-element-text .author {
     font-size: 5vw;
+    padding-top: 0;
   }
 }
 @media (min-width: 501px) and (max-width: 768px) {
@@ -10941,9 +10943,15 @@ body::after {
     font-size: 3.5vw;
   }
 }
-@media (min-width: 769px) and (max-width: 1439px) {
+@media (min-width: 769px) and (max-width: 1000px) {
   .container-cards-element-text .author {
-    font-size: 2vw;
+    margin-top: 0;
+    font-size: 1.2vw;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1440px) {
+  .container-cards-element-text .author {
+    font-size: 1.3vw;
   }
 }
 .container-cards-element-text .book-title {
@@ -11001,16 +11009,19 @@ body::after {
 }
 @media (min-width: 501px) and (max-width: 610px) {
   .container-cards-element .scale {
+    display: none;
     width: 100%;
   }
 }
 @media (min-width: 610px) and (max-width: 768px) {
   .container-cards-element .scale {
+    display: none;
     width: 50%;
   }
 }
 @media (min-width: 769px) and (max-width: 1399px) {
   .container-cards-element .scale {
+    display: none;
     width: 48%;
   }
 }

@@ -1,9 +1,10 @@
 const domElements = {
-containerCards: document.getElementById('container-cardsId'),
-search: {
-    input: document.getElementById('search_string'),
-    button: document.getElementById('button-search'),
-    },
+    containerCards: document.getElementById('container-cardsId'),
+    search: {
+        input: document.getElementById('search_string'),
+        button: document.getElementById('button-search'),
+        },
+    modalWindowContainer: document.getElementById('modalWindow'),    
 };
 
 function generateCards(data) {
@@ -66,6 +67,30 @@ function close(item) {
 
 close(leftLinks);
 
+//Делаем модальные окна
+
+function generateModalsWindows(data) {
+    const modalsArray = [];
+
+    for (let i = 0; i < cardsData.length; i = i + 1) {
+        modalsArray.push(`
+           <div class="modalsWindows-modal modalsWindows-modal_${i + 1}">
+                <div class="modalsWindows-modal-content modal-content_${i + 1}">
+                    <div class="modalsWindows-modal-content-image">
+                        <img class="big-image" src='../image/books/${i + 1}.jpg' alt="img_${i + 1}">
+                    </div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                </div>
+            </div> 
+        `);
+    };
+
+    return modalsArray;
+};
+
+const modalWindowsArray = generateModalsWindows(cardsData);
+domElements.modalWindowContainer.innerHTML = modalWindowsArray.join('');
+
 //Создаем переменные с модальными окнами
 
 let modal = document.querySelectorAll('.modalsWindows-modal');
@@ -99,9 +124,6 @@ function closeModalWindow(array) {
 };
 
 closeModalWindow(modalWindowsCollection);
-
-console.log();
-
 
 
 
