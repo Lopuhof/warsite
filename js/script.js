@@ -13,7 +13,7 @@ function generateCards(data) {
     for (let i = 0; i < data.length; i = i + 1) {
         cards.push(`
             <div class="container-cards-element">
-                <div class="container-cards-element-img"><img src="../image/books/${i + 1}.jpg" alt="book_${i + 1}"></div>
+                <div class="container-cards-element-img"><img ${data[i].string} alt="book_${i + 1}"></div>
                 <div class="container-cards-element-text">
                 <h4 class="author">${data[i].author}</h4>
                 <h4 class="book-title">${data[i].title}<br>(1946)</h4>

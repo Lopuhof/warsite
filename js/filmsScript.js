@@ -13,7 +13,7 @@ function createFilms(filmsData) {
     for (let i = 0; i < filmsData.length; i = i + 1) {
         filmsCards.push(`
             <div class="container-cards-element">
-                <video controls="controls" src="../video/${i + 1}.mp4" class="container-cards-element-video"></video>
+                <video controls="controls" ${filmsData[i].string} class="container-cards-element-video"></video>
                 <h4 class="video-title">${filmsData[i].title}<br>(${filmsData[i].yearOfCreate})</h4>
                 <hr class="under-project">
                 <div class="video-text">${filmsData[i].description}</div>
