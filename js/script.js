@@ -3,7 +3,7 @@ const domElements = {
     search: {
         input: document.getElementById('search_string'),
         button: document.getElementById('button-search'),
-        },
+    },
     modalWindowContainer: document.getElementById('modalWindow'),    
 };
 

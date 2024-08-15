@@ -10840,6 +10840,11 @@ body::after {
 .container-cards-element-img {
   width: 45%;
 }
+@media (min-width: 320px) and (max-width: 500px) {
+  .container-cards-element-img {
+    width: 100%;
+  }
+}
 .container-cards-element-img img {
   width: 225px;
   height: 300px;

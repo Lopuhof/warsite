@@ -454,6 +454,9 @@ body::after{
             }
             &-img{
                 width: 45%;
+                @media (min-width: 320px) and (max-width: 500px) {
+                    width: 100%;
+                }
                 img{
                     width: 225px;
                     height: 300px;
