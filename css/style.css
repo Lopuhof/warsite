@@ -11507,9 +11507,8 @@ body::after {
   border-radius: 3px;
   z-index: 999;
 }
-.modalsWindows-modal-content-image .big-image {
-  display: block;
-  /*                     width: 75%; */
+.modalsWindows-modal-content .mails-bigImage {
+  width: 40%;
 }
 .modalsWindows-modal-content-close {
   width: 10px;

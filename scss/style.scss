@@ -1040,10 +1040,8 @@ body::after{
                 border-radius: 3px;
 
                 z-index: 999;
-                .big-image{
-                    display: block;
-/*                     width: 75%; */
-                }
+            }.mails-bigImage{
+                width: 40%;
             }
             &-close{
                 width: 10px;
