@@ -15,6 +15,15 @@ $font-other: "Century Gothic Regular";
     }
 }
 
+@keyframes container-slow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }    
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -171,8 +180,10 @@ body::after{
     width: 1440px;
 
     z-index: 4;
+    animation: container-slow 2.5s forwards;
     @media (min-width: 320px) and (max-width: 1440px) {
         width: 100%;
+        animation: container-slow 2.5s forwards;
     }
     &-menu{
         display: flex;

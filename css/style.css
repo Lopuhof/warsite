@@ -10347,6 +10347,14 @@ readers do not read off random characters that represent icons */
     left: 0px;
   }
 }
+@keyframes container-slow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10509,10 +10517,12 @@ body::after {
   position: relative;
   width: 1440px;
   z-index: 4;
+  animation: container-slow 2.5s forwards;
 }
 @media (min-width: 320px) and (max-width: 1440px) {
   .container {
     width: 100%;
+    animation: container-slow 2.5s forwards;
   }
 }
 .container-menu {
