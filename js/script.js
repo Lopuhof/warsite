@@ -4,7 +4,8 @@ const domElements = {
         input: document.getElementById('search_string'),
         button: document.getElementById('button-search'),
     },
-    modalWindowContainer: document.getElementById('modalWindow'),    
+    modalWindowContainer: document.getElementById('modalWindow'), 
+    bookTitle: document.querySelectorAll('.book-title'),
 };
 
 function generateCards(data) {
@@ -16,7 +17,7 @@ function generateCards(data) {
                 <div class="container-cards-element-img"><img ${data[i].string} alt="book_${i + 1}"></div>
                 <div class="container-cards-element-text">
                 <h4 class="author">${data[i].author}</h4>
-                <h4 class="book-title">${data[i].title}<br>(1946)</h4>
+                <h4 class="book-title">${data[i].title}<br>${data[i].year}</h4>
                 <hr class="under-project-book"><p>${data[i].description}</p></div>
                 <button class="scale" id="scale_${i + 1}">Увеличить</button>
             </div>
@@ -124,6 +125,8 @@ function closeModalWindow(array) {
 };
 
 closeModalWindow(modalWindowsCollection);
+
+console.log(domElements.bookTitle);
 
 
 
