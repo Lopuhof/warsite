@@ -5,7 +5,6 @@ const domElements = {
         button: document.getElementById('button-search'),
     },
     modalWindowContainer: document.getElementById('modalWindow'), 
-    bookTitle: document.querySelectorAll('.book-title'),
 };
 
 function generateCards(data) {
@@ -17,7 +16,8 @@ function generateCards(data) {
                 <div class="container-cards-element-img"><img ${data[i].string} alt="book_${i + 1}"></div>
                 <div class="container-cards-element-text">
                 <h4 class="author">${data[i].author}</h4>
-                <h4 class="book-title">${data[i].title}<br>${data[i].year}</h4>
+                <h4 class="book-title">${data[i].title}</h4>
+                <h4 class="book-year">${data[i].year}</h4>
                 <hr class="under-project-book"><p>${data[i].description}</p></div>
                 <button class="scale" id="scale_${i + 1}">Увеличить</button>
             </div>
@@ -126,7 +126,17 @@ function closeModalWindow(array) {
 
 closeModalWindow(modalWindowsCollection);
 
-console.log(domElements.bookTitle);
+let bookTitle = document.querySelectorAll('.book-title');
+
+/* function cropTitle(title) {
+    for (let i = 0; i < title.length; i = i + 1) {
+        if (title.length > 34) {
+
+        };
+    };
+}; */
+
+console.log(bookTitle[0]);
 
 
 

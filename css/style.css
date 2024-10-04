@@ -10996,6 +10996,32 @@ body::after {
     margin-top: 0;
   }
 }
+.container-cards-element-text .book-year {
+  font-family: 'Bebas Neue Bold';
+  font-size: 1em;
+  color: #FFC000;
+  text-align: center;
+}
+@media (min-width: 320px) and (max-width: 500px) {
+  .container-cards-element-text .book-year {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 501px) and (max-width: 650px) {
+  .container-cards-element-text .book-year {
+    font-size: 4.7vw;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1399px) {
+  .container-cards-element-text .book-year {
+    font-size: 1.6vw;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1440px) {
+  .container-cards-element-text .book-year {
+    margin-top: 0;
+  }
+}
 .container-cards-element-text .under-project-book {
   width: 90%;
   height: 3px;
