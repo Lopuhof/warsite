@@ -18,7 +18,7 @@ function generateCards(data) {
                 <h4 class="author">${data[i].author}</h4>
                 <h4 class="book-title">${data[i].title}</h4>
                 <h4 class="book-year">${data[i].year}</h4>
-                <hr class="under-project-book"><p>${data[i].description}</p></div>
+                <hr class="under-project-book"><p class="book-description">${data[i].description}</p></div>
                 <button class="scale" id="scale_${i + 1}">Увеличить</button>
             </div>
         `);
@@ -139,6 +139,21 @@ function cropTitles(title) {
 };
 
 cropTitles(bookTitles);
+
+let text = document.querySelectorAll('.book-description');
+
+function cropDescriptions(description) {
+    for (let i = 0; i < description.length; i = i + 1) {
+        if (description[i].innerText.length > 241) {
+            description[i].textContent = description[i].innerText.slice(0, 238) + '...';
+        };
+    };
+
+    return description;
+};
+
+cropDescriptions(text);
+
 
 
 

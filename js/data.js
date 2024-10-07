@@ -11,7 +11,7 @@ const cardsData = [
       id: 2, 
       title: 'Хаджи-Мурат', 
       author: 'Лев Николаевич Толстой',
-      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex aspernatur inventore, enim accusantium a reprehenderit veritatis sint numquam necessitatibus expedita debitis. Beatae laboriosam officiis ipsum, aliquam neque delectus quas itaque.',
+      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex aspernatur inventore, enim accusantium a reprehenderit veritatis sint numquam necessitatibus expedita debitis. Beatae laboriosam officiis ipsum, aliquam neque delectus quas itaque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex aspernatur inventore, enim accusantium a reprehenderit veritatis sint numquam necessitatibus expedita debitis. Beatae laboriosam officiis ipsum, aliquam neque delectus quas itaque.',
       string: 'src="../image/books/2.jpg"',
       year: '1944',
    },
