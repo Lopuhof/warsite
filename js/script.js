@@ -126,17 +126,19 @@ function closeModalWindow(array) {
 
 closeModalWindow(modalWindowsCollection);
 
-let bookTitle = document.querySelectorAll('.book-title');
+let bookTitles = document.querySelectorAll('.book-title');
 
-/* function cropTitle(title) {
+function cropTitles(title) {
     for (let i = 0; i < title.length; i = i + 1) {
-        if (title.length > 34) {
-
+        if (title[i].innerText.length > 34) {
+            title[i].textContent = title[i].innerText.slice(0, 31) + '...';
         };
     };
-}; */
 
-console.log(bookTitle[0]);
+    return title;
+};
+
+cropTitles(bookTitles);
 
 
 
