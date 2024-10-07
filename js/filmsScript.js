@@ -68,8 +68,8 @@ let filmsTitles = document.querySelectorAll('.video-title');
 
 function cropTitles(title) {
     for (let i = 0; i < title.length; i = i + 1) {
-        if (title[i].innerText.length > 34) {
-            title[i].textContent = title[i].innerText.slice(0, 31) + '...';
+        if (title[i].innerText.length > 23) {
+            title[i].textContent = title[i].innerText.slice(0, 21) + '...';
         };
     };
 

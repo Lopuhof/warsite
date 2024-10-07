@@ -42,7 +42,7 @@ const cardsData = [
    {
       id: 6, 
       title: 'Борьба русского народа с немецкими интервентами в XII-XV вв.', 
-      author: '',
+      author: 'Михаил Николаевич Тихомиров',
       description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex aspernatur inventore, enim accusantium a reprehenderit veritatis sint numquam necessitatibus expedita debitis. Beatae laboriosam officiis ipsum, aliquam neque delectus quas itaque.',
       string: 'src="../image/books/6.jpg"',
       year: '1944', 
