@@ -16,7 +16,7 @@ function createFilms(filmsData) {
                 <video controls="controls" ${filmsData[i].string} class="container-cards-element-video"></video>
                 <h4 class="video-title">${filmsData[i].title}<br>(${filmsData[i].yearOfCreate})</h4>
                 <hr class="under-project">
-                <div class="video-text">${filmsData[i].description}</div>
+                <div class="video-text"><p class="film-description">${filmsData[i].description}</p></div>
                 <hr class="under-project">    
             </div>
         `);
@@ -77,3 +77,17 @@ function cropTitles(title) {
 };
 
 cropTitles(filmsTitles);
+
+let textOfFilms = document.querySelectorAll('.film-description');
+
+function cropDescriptions(description) {
+    for (let i = 0; i < description.length; i = i + 1) {
+        if (description[i].innerText.length > 241) {
+            description[i].textContent = description[i].innerText.slice(0, 238) + '...';
+        };
+    };
+
+    return description;
+};
+
+cropDescriptions(textOfFilms);

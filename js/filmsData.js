@@ -3,7 +3,7 @@ const cardsFilmsData = [
         id: 1,
         title: 'ssssssss',
         yearOfCreate: '1946',
-        description: 'Lorem hfkdshflahlfa',
+        description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex aspernatur inventore, enim accusantium a reprehenderit veritatis sint numquam necessitatibus expedita debitis. Beatae laboriosam officiis ipsum, aliquam neque delectus quas itaque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex aspernatur inventore, enim accusantium a reprehenderit veritatis sint numquam necessitatibus expedita debitis. Beatae laboriosam officiis ipsum, aliquam neque delectus quas itaque.',
         string: 'src="../video/1.mp4"',
     },
     {   

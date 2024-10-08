@@ -10818,6 +10818,7 @@ body::after {
   border-style: solid;
   border-color: white;
   border-radius: 5px;
+  box-shadow: 2px 1px 1px rgba(0, 0, 255, 0.2);
 }
 @media (min-width: 320px) and (max-width: 500px) {
   .container-cards-element {
