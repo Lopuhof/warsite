@@ -1,4 +1,4 @@
-const cardsData = [ 
+let cardsData = [ 
    {
       id: 1,
       title: 'Капитанская дочка', 

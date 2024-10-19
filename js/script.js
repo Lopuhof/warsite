@@ -7,6 +7,23 @@ const domElements = {
     modalWindowContainer: document.getElementById('modalWindow'), 
 };
 
+function sortOfData(dataObjects) {
+    
+    for (let i = 0; i < dataObjects.length; i = i + 1) {
+        for (let j = i; j < dataObjects.length; j = j + 1) {
+            if (dataObjects[i].author > dataObjects[j].author) {
+                let temp = dataObjects[i];
+                dataObjects[i] = dataObjects[j];
+                dataObjects[j] = temp;
+            };
+        };
+    };
+
+    return dataObjects;
+};
+
+sortOfData(cardsData);
+
 function generateCards(data) {
     const cards = [];
 
@@ -23,12 +40,31 @@ function generateCards(data) {
             </div>
         `);
     };
-
+/* 
+    for (let i = 0; i < data.length; i = i + 1) {
+        for (let j = i; j < data.length; j = j + 1) {
+            if (cards[i].childNodes[3].childNodes[1].innerText > cards[j].childNodes[3].childNodes[1].innerText) {
+                let temp = cards[i];
+                cards[i] = cards[j];
+                cards[j] = temp;
+            };
+        };
+    };
+ */
     return cards;
 };
     
 const cardsArr = generateCards(cardsData);
 domElements.containerCards.innerHTML = cardsArr.join('');
+
+// Сортировка книг по автору
+
+let cardElement = document.querySelectorAll('.container-cards-element');
+let authors = document.querySelectorAll('.author');
+
+console.log(cardElement[0]);
+
+
  
 //Поиск книги по автору, названию или описанию
 
@@ -154,8 +190,8 @@ function cropDescriptions(description) {
 
 cropDescriptions(text);
 
+let cardElements = document.querySelectorAll('.container-cards-element');
 
-
-
+console.log(cardElements[0].childNodes[3].childNodes[1].innerText);
 
 
