@@ -6,6 +6,22 @@ const domElements = {
     },
 };
 
+function sortOfDataFilms(dataOfFilms) {
+    for (let i = 0; i < dataOfFilms.length; i = i + 1) {
+        for (let j = i; j < dataOfFilms.length; j = j + 1) {
+            if (dataOfFilms[i].title > dataOfFilms[j].title) {
+                let temp = dataOfFilms[i];
+                dataOfFilms[i] = dataOfFilms[j];
+                dataOfFilms[j] = temp;
+            };
+        };
+    };
+
+    return dataOfFilms;
+};
+
+sortOfDataFilms(cardsFilmsData);
+
 function createFilms(filmsData) {
 
     const filmsCards = [];
