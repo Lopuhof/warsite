@@ -11,7 +11,7 @@ function sortOfData(dataObjects) {
     
     for (let i = 0; i < dataObjects.length; i = i + 1) {
         for (let j = i; j < dataObjects.length; j = j + 1) {
-            if (dataObjects[i].author > dataObjects[j].author) {
+            if (dataObjects[i].author.surname > dataObjects[j].author.surname) {
                 let temp = dataObjects[i];
                 dataObjects[i] = dataObjects[j];
                 dataObjects[j] = temp;
@@ -30,41 +30,26 @@ function generateCards(data) {
     for (let i = 0; i < data.length; i = i + 1) {
         cards.push(`
             <div class="container-cards-element">
-                <div class="container-cards-element-img"><img ${data[i].string} alt="book_${i + 1}"></div>
+                <div class="container-cards-element-img">
+                    <img ${data[i].createString} alt="book_${i + 1}">
+                </div>
                 <div class="container-cards-element-text">
-                <h4 class="author">${data[i].author}</h4>
-                <h4 class="book-title">${data[i].title}</h4>
-                <h4 class="book-year">${data[i].year}</h4>
-                <hr class="under-project-book"><p class="book-description">${data[i].description}</p></div>
-                <button class="scale" id="scale_${i + 1}">Увеличить</button>
+                    <h4 class="author">${data[i].author.surname} ${data[i].author.name} ${data[i].author.fatherName}</h4>
+                    <h4 class="book-title">${data[i].title}</h4>
+                    <h4 class="book-year">${data[i].year}</h4>
+                    <hr class="under-project-book">
+                    <p class="book-description">${data[i].description}</p>
+                </div>
+                ${cardsData[i].button}
             </div>
         `);
     };
-/* 
-    for (let i = 0; i < data.length; i = i + 1) {
-        for (let j = i; j < data.length; j = j + 1) {
-            if (cards[i].childNodes[3].childNodes[1].innerText > cards[j].childNodes[3].childNodes[1].innerText) {
-                let temp = cards[i];
-                cards[i] = cards[j];
-                cards[j] = temp;
-            };
-        };
-    };
- */
+
     return cards;
 };
     
 const cardsArr = generateCards(cardsData);
 domElements.containerCards.innerHTML = cardsArr.join('');
-
-// Сортировка книг по автору
-
-let cardElement = document.querySelectorAll('.container-cards-element');
-let authors = document.querySelectorAll('.author');
-
-console.log(cardElement[0]);
-
-
  
 //Поиск книги по автору, названию или описанию
 
@@ -93,39 +78,43 @@ console.log(cardElement[0]);
     };
 };
 
+// Закрываем левые ссылки
+
 let leftLinks = document.querySelector('.left-links');
 let closeBtn = document.querySelector('.close-links');
 
-function close(item) {
-    closeBtn.onclick = function() {
-        item.style.display = 'none';
+function close(btn, item) {
+    if (Array.isArray(btn) === false) {
+        btn.onclick = function() {
+            item.style.display = 'none';
+        };
+    } else { 
+        for (let i = 0; i < btn.length; i = i + 1) {
+            btn[i].onclick = function() {
+                item.style.display = 'none';
+            };  
+        };
     };
 };
 
-close(leftLinks);
+close(closeBtn, leftLinks);
 
-//Делаем модальные окна
+console.log(closeBtn);
 
-function generateModalsWindows(data) {
-    const modalsArray = [];
+// Создаем модальные окна
 
-    for (let i = 0; i < cardsData.length; i = i + 1) {
-        modalsArray.push(`
-           <div class="modalsWindows-modal modalsWindows-modal_${i + 1}">
-                <div class="modalsWindows-modal-content modal-content_${i + 1}">
-                    <div class="modalsWindows-modal-content-image">
-                        <img class="big-image" src='../image/books/${i + 1}.jpg' alt="img_${i + 1}">
-                    </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
-                </div>
-            </div> 
+function generateModalWindows(data) {
+    const modalArr = [];
+
+    for(let i = 0; i < data.length; i = i + 1) {
+        modalArr.push(`
+            ${data[i].modalWindow};
         `);
     };
-
-    return modalsArray;
+    return modalArr;
 };
 
-const modalWindowsArray = generateModalsWindows(cardsData);
+const modalWindowsArray = generateModalWindows(cardsData);
 domElements.modalWindowContainer.innerHTML = modalWindowsArray.join('');
 
 //Создаем переменные с модальными окнами
@@ -139,28 +128,17 @@ function modalWindow(element) {
             element[i].style.display = 'block';
         });
     };
-};
+}; 
 
 modalWindow(modal);
 
-let modalWindowsCollection = document.querySelectorAll('.modalsWindows-modal');
-let closeModalBtnNewClass = document.querySelectorAll('.modalsWindows-modal-content-close');
+// Закрываем модальное окно
 
-for (let i = 0; i < cardsData.length; i = i + 1) {
-    closeModalBtnNewClass[i].classList.add('closeModal');
-};
+let closeModalBtn = document.querySelectorAll('.modalsWindows-modal-content-close');
 
-let closeModalBtn = document.querySelectorAll('.closeModal');
+close(closeModalBtn, modal);
 
-function closeModalWindow(array) {
-    for (let i = 0; i < cardsData.length; i = i + 1) {
-        closeModalBtn[i].addEventListener('click', function() {
-            array[i].style.display = 'none';
-        });
-    };
-};
-
-closeModalWindow(modalWindowsCollection);
+// Обрезаем заголовки и аннотации
 
 let bookTitles = document.querySelectorAll('.book-title');
 
@@ -189,9 +167,5 @@ function cropDescriptions(description) {
 };
 
 cropDescriptions(text);
-
-let cardElements = document.querySelectorAll('.container-cards-element');
-
-console.log(cardElements[0].childNodes[3].childNodes[1].innerText);
 
 
