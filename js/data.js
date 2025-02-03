@@ -19,7 +19,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -47,7 +47,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -75,7 +75,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -103,7 +103,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -131,7 +131,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -159,7 +159,7 @@ let cardsData = [
                  <div class="modalsWindows-modal-content-image">
                      <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                  </div>
-                 <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                 <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
              </div>
          </div> 
          `)},
@@ -187,7 +187,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -215,7 +215,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -243,7 +243,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -272,7 +272,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -300,7 +300,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -328,7 +328,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -356,7 +356,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -384,7 +384,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -413,7 +413,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -441,7 +441,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -469,7 +469,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -497,7 +497,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -525,7 +525,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -553,7 +553,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -581,7 +581,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -609,7 +609,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -637,7 +637,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -665,7 +665,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -693,7 +693,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -721,7 +721,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -749,7 +749,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -777,7 +777,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -805,7 +805,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -833,7 +833,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -861,7 +861,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -889,7 +889,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -917,7 +917,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},
@@ -945,7 +945,7 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
-                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark"></i></div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
             `)},

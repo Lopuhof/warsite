@@ -84,22 +84,12 @@ let leftLinks = document.querySelector('.left-links');
 let closeBtn = document.querySelector('.close-links');
 
 function close(btn, item) {
-    if (Array.isArray(btn) === false) {
-        btn.onclick = function() {
-            item.style.display = 'none';
-        };
-    } else { 
-        for (let i = 0; i < btn.length; i = i + 1) {
-            btn[i].onclick = function() {
-                item.style.display = 'none';
-            };  
-        };
+    btn.onclick = function() {
+        item.style.display = 'none';
     };
 };
 
 close(closeBtn, leftLinks);
-
-console.log(closeBtn);
 
 // Создаем модальные окна
 
@@ -134,9 +124,19 @@ modalWindow(modal);
 
 // Закрываем модальное окно
 
-let closeModalBtn = document.querySelectorAll('.modalsWindows-modal-content-close');
+let closeModal = document.querySelectorAll('.xmark_modals');
 
-close(closeModalBtn, modal);
+console.log(closeModal);
+
+function closeModalWindows(modalCloseBtn, modalWindow) {
+    for (let i = 0; i < modal.length; i = i + 1) {
+        modalCloseBtn[i].addEventListener('click', function() {
+            modalWindow[i].style.display = 'none';
+        });
+    };
+};
+
+closeModalWindows(closeModal, modal);
 
 // Обрезаем заголовки и аннотации
 
@@ -167,5 +167,4 @@ function cropDescriptions(description) {
 };
 
 cropDescriptions(text);
-
 
