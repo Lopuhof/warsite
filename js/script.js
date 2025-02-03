@@ -83,13 +83,13 @@ domElements.containerCards.innerHTML = cardsArr.join('');
 let leftLinks = document.querySelector('.left-links');
 let closeBtn = document.querySelector('.close-links');
 
-function close(btn, item) {
+function closeLeftLinks(btn, item) {
     btn.onclick = function() {
         item.style.display = 'none';
     };
 };
 
-close(closeBtn, leftLinks);
+closeLeftLinks(closeBtn, leftLinks);
 
 // Создаем модальные окна
 
