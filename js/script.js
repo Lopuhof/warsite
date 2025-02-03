@@ -116,6 +116,7 @@ function modalWindow(element) {
     for (let i = 0; i < cardsData.length; i = i + 1) {
         btn[i].addEventListener('click', function() {
             element[i].style.display = 'block';
+            document.body.style.overflow = 'hidden';
         });
     };
 }; 
@@ -132,6 +133,7 @@ function closeModalWindows(modalCloseBtn, modalWindow) {
     for (let i = 0; i < modal.length; i = i + 1) {
         modalCloseBtn[i].addEventListener('click', function() {
             modalWindow[i].style.display = 'none';
+            document.body.style.overflow = 'scroll';
         });
     };
 };

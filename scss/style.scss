@@ -30,8 +30,6 @@ $font-other: "Century Gothic Regular";
     padding: 0; 
 }
 
-
-
 body{
     background-color: white;
     background-image: url(../image/fone/body-fone.jpg);
@@ -1044,6 +1042,7 @@ body::after{
     left: 0;
     right: 0;
     bottom: 0;
+
     &-modal{
     display: none;
     position: fixed;
@@ -1071,6 +1070,7 @@ body::after{
                 border: 3px;
                 border-color: #002060;
                 border-radius: 3px;
+                width: 40%;
 
                 z-index: 999;
                 img{
@@ -1103,6 +1103,7 @@ body::after{
         right: 0;
         bottom: 0;
         opacity: 0.9;
+        overflow-y: hidden;
 
         z-index: 997;
         @media (min-width: 1441px){

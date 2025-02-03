@@ -11545,6 +11545,7 @@ body::after {
   border: 3px;
   border-color: #002060;
   border-radius: 3px;
+  width: 40%;
   z-index: 999;
 }
 .modalsWindows-modal-content-image img {
@@ -11573,6 +11574,7 @@ body::after {
   right: 0;
   bottom: 0;
   opacity: 0.9;
+  overflow-y: hidden;
   z-index: 997;
 }
 @media (min-width: 1441px) {
