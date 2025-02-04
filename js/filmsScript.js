@@ -29,7 +29,7 @@ function createFilms(filmsData) {
     for (let i = 0; i < filmsData.length; i = i + 1) {
         filmsCards.push(`
             <div class="container-cards-element">
-                <video controls="controls" ${filmsData[i].string} class="container-cards-element-video"></video>
+                <video controls="controls" ${filmsData[i].createString} class="container-cards-element-video"></video>
                 <h4 class="video-title">${filmsData[i].title}<br>(${filmsData[i].yearOfCreate})</h4>
                 <hr class="under-project">
                 <div class="video-text"><p class="film-description">${filmsData[i].description}</p></div>
@@ -72,13 +72,13 @@ domElements.filmsAreal.innerHTML = filmsCardsArr.join('');
 let leftLinks = document.querySelector('.left-links');
 let closeBtn = document.querySelector('.close-links');
 
-function close(item) {
+function FilmsClose(item) {
     closeBtn.onclick = function() {
         item.style.display = 'none';
     };
 };
 
-close(leftLinks); 
+FilmsClose(leftLinks); 
 
 let filmsTitles = document.querySelectorAll('.video-title');
 
