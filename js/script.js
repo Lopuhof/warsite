@@ -98,7 +98,7 @@ function generateModalWindows(data) {
 
     for(let i = 0; i < data.length; i = i + 1) {
         modalArr.push(`
-            ${data[i].modalWindow};
+            ${data[i].modalWindow}
         `);
     };
     return modalArr;
@@ -126,8 +126,6 @@ modalWindow(modal);
 // Закрываем модальное окно
 
 let closeModal = document.querySelectorAll('.xmark_modals');
-
-console.log(closeModal);
 
 function closeModalWindows(modalCloseBtn, modalWindow) {
     for (let i = 0; i < modal.length; i = i + 1) {
@@ -169,4 +167,18 @@ function cropDescriptions(description) {
 };
 
 cropDescriptions(text);
+
+//делаем кнопку равную шириной изображению 
+
+let imgWidth = document.querySelectorAll('img');
+
+function btnStyleWidth(button, imgStyle) {
+    for (let i = 0; i < button.length; i = i + 1) {
+        button[i].style.width = `${imgStyle[2].width}` + 'px';
+    };
+
+    return button;
+};
+
+btnStyleWidth(btn, imgWidth);
 

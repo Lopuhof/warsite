@@ -10850,10 +10850,27 @@ body::after {
 }
 .container-cards-element-img {
   width: 45%;
+  min-width: 225px;
+  min-height: 300px;
 }
 @media (min-width: 320px) and (max-width: 500px) {
   .container-cards-element-img {
     width: 100%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1000px) {
+  .container-cards-element-img {
+    min-height: 28vw;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1398px) {
+  .container-cards-element-img {
+    min-height: 20vw;
+  }
+}
+@media (min-width: 1399px) {
+  .container-cards-element-img {
+    min-height: 18vw;
   }
 }
 .container-cards-element-img img {
@@ -11034,7 +11051,6 @@ body::after {
   border: #FFC000;
 }
 .container-cards-element .scale {
-  width: 52%;
   height: 30px;
   margin-top: 7px;
   font-family: 'Century Gothic Regular';
@@ -11052,19 +11068,16 @@ body::after {
 @media (min-width: 501px) and (max-width: 610px) {
   .container-cards-element .scale {
     display: none;
-    width: 100%;
   }
 }
 @media (min-width: 610px) and (max-width: 768px) {
   .container-cards-element .scale {
     display: none;
-    width: 50%;
   }
 }
 @media (min-width: 769px) and (max-width: 1399px) {
   .container-cards-element .scale {
     display: none;
-    width: 48%;
   }
 }
 .container-cards-element .scale:hover {

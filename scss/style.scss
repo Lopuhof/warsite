@@ -464,8 +464,19 @@ body::after{
             }
             &-img{
                 width: 45%;
+                min-width: 225px;
+                min-height: 300px;
                 @media (min-width: 320px) and (max-width: 500px) {
                     width: 100%;
+                }
+                @media (min-width: 769px) and (max-width: 1000px) {
+                    min-height: 28vw;
+                }
+                @media (min-width: 1001px) and (max-width: 1398px) {
+                    min-height: 20vw;
+                }
+                @media (min-width: 1399px) {
+                    min-height: 18vw;
                 }
                 img{
                     width: 225px;
@@ -602,7 +613,6 @@ body::after{
                 }
             }
             .scale{
-                width: 52%;
                 height: 30px;
                 margin-top: 7px;
                 font-family: 'Century Gothic Regular';
@@ -617,15 +627,12 @@ body::after{
                 }
                 @media (min-width: 501px) and (max-width: 610px) {
                     display: none;
-                    width: 100%;
                 }
                 @media (min-width: 610px) and (max-width: 768px) {
                     display: none;
-                    width: 50%;
                 }
                 @media (min-width: 769px) and (max-width: 1399px) {
                     display: none;
-                    width: 48%;
                 }
             }
             .scale:hover{
