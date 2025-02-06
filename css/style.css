@@ -11098,6 +11098,12 @@ body::after {
   color: #FFC000;
   text-align: center;
 }
+.container-cards-element .video-year {
+  font-family: 'Bebas Neue Bold';
+  font-size: 2em;
+  color: #FFC000;
+  text-align: center;
+}
 .container-cards-element .video-text {
   width: 85%;
   margin-left: auto;

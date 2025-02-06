@@ -30,7 +30,8 @@ function createFilms(filmsData) {
         filmsCards.push(`
             <div class="container-cards-element">
                 <video controls="controls" ${filmsData[i].createString} class="container-cards-element-video"></video>
-                <h4 class="video-title">${filmsData[i].title}<br>(${filmsData[i].yearOfCreate})</h4>
+                <h4 class="video-title">${filmsData[i].title}</h4>
+                <h4 class="video-year">(${filmsData[i].yearOfCreate})</h4>
                 <hr class="under-project">
                 <div class="video-text"><p class="film-description">${filmsData[i].description}</p></div>
                 <hr class="under-project">    
@@ -107,3 +108,29 @@ function cropDescriptions(description) {
 };
 
 cropDescriptions(textOfFilms);
+
+//делаем заглушки для названия фильмов и описания 
+
+function capFilmsTitles(titles) {
+    for (let i = 0; i < titles.length; i = i + 1) {
+        if ((titles[i].innerText.length === 0) || (titles[i].innerText.length === undefined)) {
+            titles[i].textContent = 'Без названия';
+        };
+    };
+
+    return titles;
+};
+
+capFilmsTitles(filmsTitles);
+
+function capFilmsDescription(description) {
+    for (let i = 0; i < description.length; i = i + 1) {
+        if ((description[i].innerText.length === 0) || (description[i].innerText.length === undefined)) {
+            description[i].textContent = 'Хороший фильм для хороших зрителей';
+        };
+    };
+
+    return description;
+};
+
+capFilmsDescription(textOfFilms);
