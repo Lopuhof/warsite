@@ -182,3 +182,43 @@ function btnStyleWidth(button, imgStyle) {
 
 btnStyleWidth(btn, imgWidth);
 
+//делаем заглушки для авторов, заглавий и описания
+
+let bookAuthors = document.querySelectorAll('.author');
+let bookDescription = document.querySelectorAll('.book-description');
+
+function capAuthors(authors) {
+    for (let i = 0; i < authors.length; i = i + 1) {
+        if ((authors[i].innerText.length === 0) || (authors[i].innerText.length === undefined)) {
+            authors[i].textContent = 'Автор неизвестен';
+        };
+    };
+
+    return authors;
+};
+
+capAuthors(bookAuthors);
+
+function capBookTitles(titles) {
+    for (let i = 0; i < titles.length; i = i + 1) {
+        if ((titles[i].innerText.length === 0) || (titles[i].innerText.length === undefined)) {
+            titles[i].textContent = 'Без названия';
+        };
+    };
+
+    return titles;
+};
+
+capBookTitles(bookTitles);
+
+function capBookDescription(description) {
+    for (let i = 0; i < description.length; i = i + 1) {
+        if ((description[i].innerText.length === 0) || (description[i].innerText.length === undefined)) {
+            description[i].textContent = 'Хорошая книга для хороших читателей';
+        };
+    };
+
+    return description;
+};
+
+capBookDescription(bookDescription);
