@@ -10339,6 +10339,14 @@ readers do not read off random characters that represent icons */
   content: "\f3f6";
 }
 
+@keyframes dynamic-fone {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 110%;
+  }
+}
 @keyframes contacts-and-site {
   0% {
     left: -750px;
@@ -10367,6 +10375,17 @@ body {
   background-size: cover;
   background-attachment: fixed;
   z-index: 1;
+  animation-name: dynamic-fone;
+  animation-duration: 25s;
+  /*  animation-delay: 5s; */
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@media (min-width: 320px) and (max-width: 550px) {
+  body {
+    animation-name: none;
+  }
 }
 
 body::after {
