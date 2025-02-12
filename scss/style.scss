@@ -50,7 +50,7 @@ body{
 
     animation-name: dynamic-fone;
     animation-duration: 25s;
-   /*  animation-delay: 5s; */
+    animation-delay: 0;
     animation-fill-mode: backwards;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -1103,11 +1103,13 @@ body::after{
                 border: 3px;
                 border-color: #002060;
                 border-radius: 3px;
-                width: 40%;
+                min-width: 25vw;
+                max-width: 30vw;
 
                 z-index: 999;
                 img{
-                    width: 30vw;
+                    min-width: 23vw;
+                    max-width: 25vw;
                 }
             }
             &-close{
