@@ -29,10 +29,3 @@
     font-weight: 400;
     font-style: normal;
 }
-
-@font-face {
-    font-family: 'DejaVu Sans';
-    src: url('DejaVuSerifCondensed.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-  }
