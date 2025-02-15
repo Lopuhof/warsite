@@ -312,7 +312,7 @@ let cardsData = [
       id: 12, 
       title: 'Капитанская дочка',
       author: {
-         surname: 'Пушкин',
+         surname: '',
          name: 'Александр',
          fatherName: 'Сергеевич',
       }, 
