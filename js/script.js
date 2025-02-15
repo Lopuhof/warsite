@@ -187,9 +187,9 @@ btnStyleWidth(btn, imgWidth);
 let bookAuthors = document.querySelectorAll('.author');
 let bookDescription = document.querySelectorAll('.book-description');
 
-function capAuthors(authors) {
-    for (let i = 0; i < authors.length; i = i + 1) {
-        if ((authors[i].innerText.length === 0) || (authors[i].innerText.length === undefined)) {
+function capAuthors(data, authors) {
+    for (let i = 0; i < data.length; i = i + 1) {
+        if ((data[i].author.surname === 0) || (data[i].author.surname === undefined)) {
             authors[i].textContent = 'Автор неизвестен';
         };
     };
@@ -197,7 +197,7 @@ function capAuthors(authors) {
     return authors;
 };
 
-capAuthors(bookAuthors);
+capAuthors(cardsData, bookAuthors);
 
 function capBookTitles(titles) {
     for (let i = 0; i < titles.length; i = i + 1) {
