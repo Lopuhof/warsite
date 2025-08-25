@@ -141,6 +141,7 @@ closeModalWindows(closeModal, modal);
 // Обрезаем заголовки и аннотации
 
 let bookTitles = document.querySelectorAll('.book-title');
+let modalsWindowsBooksTitles = document.querySelectorAll('.modalsWindows-modal-content-text-title');
 
 function cropTitles(title) {
     for (let i = 0; i < title.length; i = i + 1) {
@@ -185,40 +186,46 @@ btnStyleWidth(btn, imgWidth);
 //делаем заглушки для авторов, заглавий и описания
 
 let bookAuthors = document.querySelectorAll('.author');
+let modalsWindowsBooksAuthors = document.querySelectorAll('.modalsWindows-modal-content-text-author');
 let bookDescription = document.querySelectorAll('.book-description');
+let modalsWindowsBooksDescriptions = document.querySelectorAll('.modalsWindows-modal-content-text-description');
 
-function capAuthors(data, authors) {
+function capAuthors(data, authors, authorsOfModals) {
     for (let i = 0; i < data.length; i = i + 1) {
         if ((data[i].author.surname === 0) || (data[i].author.surname === undefined)) {
             authors[i].textContent = 'Автор неизвестен';
+            authorsOfModals[i].textContent = 'Автор неизвестен';
         };
     };
 
     return authors;
 };
 
-capAuthors(cardsData, bookAuthors);
+capAuthors(cardsData, bookAuthors, modalsWindowsBooksAuthors);
 
-function capBookTitles(titles) {
+function capBookTitles(titles, modalsWindowsTitles) {
     for (let i = 0; i < titles.length; i = i + 1) {
         if ((titles[i].innerText.length === 0) || (titles[i].innerText.length === undefined)) {
             titles[i].textContent = 'Без названия';
+            modalsWindowsTitles[i].textContent = 'Без названия';
         };
     };
 
     return titles;
 };
 
-capBookTitles(bookTitles);
+capBookTitles(bookTitles, modalsWindowsBooksTitles);
 
-function capBookDescription(description) {
+function capBookDescription(description, modalsDescriptions) {
     for (let i = 0; i < description.length; i = i + 1) {
         if ((description[i].innerText.length === 0) || (description[i].innerText.length === undefined)) {
             description[i].textContent = 'Хорошая книга для хороших читателей';
+            modalsDescriptions[i].textContent = 'Хорошая книга для хороших читателей';
         };
     };
 
     return description;
 };
 
-capBookDescription(bookDescription);
+capBookDescription(bookDescription, modalsWindowsBooksDescriptions);
+

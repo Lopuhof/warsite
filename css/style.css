@@ -11591,6 +11591,37 @@ body::after {
   min-width: 23vw;
   max-width: 25vw;
 }
+.modalsWindows-modal-content-text {
+  background-color: white;
+  width: 30%;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 1.5%;
+}
+.modalsWindows-modal-content-text-author {
+  color: #C30000;
+  font-family: "Century Gothic Regular";
+  font-size: 1.7vw;
+}
+.modalsWindows-modal-content-text-title {
+  color: #FFC000;
+  font-family: "Reforma Grotesk Medium";
+  font-size: 5vw;
+}
+.modalsWindows-modal-content-text-description {
+  font-family: "Reforma Grotesk Medium";
+  font-size: 2vw;
+}
+.modalsWindows-modal-content-text-line {
+  width: 80%;
+  height: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  background-color: #FFC000;
+  border: none;
+}
 .modalsWindows-modal-content-close {
   width: 10px;
   height: 10px;

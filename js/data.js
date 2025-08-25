@@ -19,6 +19,12 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
+                    </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
@@ -47,9 +53,15 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
+                    </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
-            </div> 
+            </div>  
             `)},
       get button() {
         return `<button class="scale" id="scale_${this.id}">Увеличить</button>`
@@ -75,9 +87,15 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
+                    </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
-            </div> 
+            </div>  
             `)},
       get button() {
         return `<button class="scale" id="scale_${this.id}">Увеличить</button>`
@@ -103,9 +121,15 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
+                    </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
-            </div> 
+            </div>  
             `)},
       get button() {
         return `<button class="scale" id="scale_${this.id}">Увеличить</button>`
@@ -131,9 +155,15 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
+                    </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
-            </div> 
+            </div>  
             `)},
       get button() {
         return `<button class="scale" id="scale_${this.id}">Увеличить</button>`
@@ -155,13 +185,19 @@ let cardsData = [
       get modalWindow() {
          return (`
          <div class="modalsWindows-modal modalsWindows-modal_${this.id}">
-             <div class="modalsWindows-modal-content modal-content_${this.id}">
-                 <div class="modalsWindows-modal-content-image">
-                     <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
-                 </div>
-                 <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
-             </div>
-         </div> 
+                <div class="modalsWindows-modal-content modal-content_${this.id}">
+                    <div class="modalsWindows-modal-content-image">
+                        <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
+                    </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
+                    </div>
+                    <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
+                </div>
+            </div> 
          `)},
       get button() {
       return `<button class="scale" id="scale_${this.id}">Увеличить</button>`
@@ -187,9 +223,15 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
+                    </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
-            </div> 
+            </div>  
             `)},
       get button() {
         return `<button class="scale" id="scale_${this.id}">Увеличить</button>`
@@ -215,9 +257,15 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
+                    </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
-            </div> 
+            </div>  
             `)},
       get button() {
         return `<button class="scale" id="scale_${this.id}">Увеличить</button>`
@@ -243,9 +291,15 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
+                    </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
-            </div> 
+            </div>  
             `)},
       get button() {
         return `<button class="scale" id="scale_${this.id}">Увеличить</button>`
@@ -272,9 +326,15 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
+                    </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
-            </div> 
+            </div>  
             `)},
       get button() {
         return `<button class="scale" id="scale_${this.id}">Увеличить</button>`
@@ -300,9 +360,15 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
+                    </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
-            </div> 
+            </div>  
             `)},
       get button() {
         return `<button class="scale" id="scale_${this.id}">Увеличить</button>`
@@ -328,9 +394,15 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
+                    </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
-            </div> 
+            </div>  
             `)},
       get button() {
         return `<button class="scale" id="scale_${this.id}">Увеличить</button>`
@@ -356,9 +428,15 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
+                    </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
-            </div> 
+            </div>  
             `)},
       get button() {
         return `<button class="scale" id="scale_${this.id}">Увеличить</button>`
@@ -384,9 +462,15 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
+                    </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
-            </div> 
+            </div>  
             `)},
       get button() {
         return `<button class="scale" id="scale_${this.id}">Увеличить</button>`
@@ -413,9 +497,15 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
+                    </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
-            </div> 
+            </div>  
             `)},
       get button() {
         return `<button class="scale" id="scale_${this.id}">Увеличить</button>`
@@ -441,9 +531,15 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
+                    </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
-            </div> 
+            </div>  
             `)},
       get button() {
         return `<button class="scale" id="scale_${this.id}">Увеличить</button>`
@@ -469,9 +565,15 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
+                    </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
-            </div> 
+            </div>  
             `)},
       get button() {
         return `<button class="scale" id="scale_${this.id}">Увеличить</button>`
@@ -496,6 +598,12 @@ let cardsData = [
                 <div class="modalsWindows-modal-content modal-content_${this.id}">
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
+                    </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
                     </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
@@ -525,6 +633,12 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
+                    </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
@@ -552,6 +666,12 @@ let cardsData = [
                 <div class="modalsWindows-modal-content modal-content_${this.id}">
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
+                    </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
                     </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
@@ -581,9 +701,15 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
+                    </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
-            </div> 
+            </div>  
             `)},
       get button() {
         return `<button class="scale" id="scale_${this.id}">Увеличить</button>`
@@ -609,9 +735,15 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
+                    </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
-            </div> 
+            </div>  
             `)},
       get button() {
         return `<button class="scale" id="scale_${this.id}">Увеличить</button>`
@@ -636,6 +768,12 @@ let cardsData = [
                 <div class="modalsWindows-modal-content modal-content_${this.id}">
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
+                    </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
                     </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
@@ -665,6 +803,12 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
+                    </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
@@ -692,6 +836,12 @@ let cardsData = [
                 <div class="modalsWindows-modal-content modal-content_${this.id}">
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
+                    </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
                     </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
@@ -721,6 +871,12 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
+                    </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
@@ -748,6 +904,12 @@ let cardsData = [
                 <div class="modalsWindows-modal-content modal-content_${this.id}">
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
+                    </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
                     </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
@@ -777,6 +939,12 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
+                    </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
@@ -804,6 +972,12 @@ let cardsData = [
                 <div class="modalsWindows-modal-content modal-content_${this.id}">
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
+                    </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
                     </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
@@ -833,6 +1007,12 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
+                    </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
@@ -860,6 +1040,12 @@ let cardsData = [
                 <div class="modalsWindows-modal-content modal-content_${this.id}">
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
+                    </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
                     </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
@@ -889,6 +1075,12 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
+                    </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
@@ -917,6 +1109,12 @@ let cardsData = [
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
                     </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
+                    </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>
             </div> 
@@ -944,6 +1142,12 @@ let cardsData = [
                 <div class="modalsWindows-modal-content modal-content_${this.id}">
                     <div class="modalsWindows-modal-content-image">
                         <img class="big-image" src='../image/books/${this.id}.jpg' alt="img_${this.id}">
+                    </div>
+                    <div class="modalsWindows-modal-content-text">
+                        <div class="modalsWindows-modal-content-text-author">${this.author.surname} ${this.author.name} ${this.author.fatherName}</div>
+                        <div class="modalsWindows-modal-content-text-title">${this.title}</div>
+                        <hr class="modalsWindows-modal-content-text-line">
+                        <div class="modalsWindows-modal-content-text-description">${this.description}</div>
                     </div>
                     <div class="modalsWindows-modal-content-close"><i class="fa-solid fa-circle-xmark xmark_modals xmark_${this.id}"></i></div>
                 </div>

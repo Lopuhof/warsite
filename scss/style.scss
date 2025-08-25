@@ -1112,6 +1112,37 @@ body::after{
                     max-width: 25vw;
                 }
             }
+            &-text{
+                background-color: white;
+                width: 30%;
+                border-top-right-radius: 12px;
+                border-bottom-right-radius: 12px;
+                padding: 1.5%;
+                &-author{
+                    color: #C30000;
+                    font-family: $font-other;
+                    font-size: 1.7vw;
+                }
+                &-title{
+                    color: #FFC000;
+                    font-family: $font-text;
+                    font-size: 5vw;
+                }
+                &-description{
+                    font-family: $font-text;
+                    font-size: 2vw;
+                }
+                &-line{
+                    width: 80%;
+                    height: 3px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 1vw;
+                    margin-bottom: 1vw;
+                    background-color: #FFC000;
+                    border: none;
+                }
+            }
             &-close{
                 width: 10px;
                 height: 10px;
